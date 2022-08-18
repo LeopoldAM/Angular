@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfie à wookie</title>
+    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
+
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .debug {
+            border: 1px solid red;
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .m-10 {
+            margin: 10px;
+        }
+
+        .m-t-50 {
+            margin-top: 50px;
+        }
+
+        .p-10 {
+            padding: 10px;
+        }
+
+        .aumax {
+            width: 100%;
+        }
+
+        .header {
+            left: 0;
+            top: 0;
+        }
+
+        .footer {
+            left: 0;
+            bottom: 0;
+        }
+
+        .container {}
+
+        .container .row {}
+
+        .container .flexible {
+            display: flex;
+        }
+
+        .container .row .col {}
+
+        .taille-container {
+            width: 1050px;
+        }
+
+        .auto-margin {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (max-width: 700px) {
+            .taille-container{
+                width: 450px;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header aumax fixed debug p-10">
+        <div class="container">
+            <div class="row flexible">
+                <div class="col">
+                    Logo
+                </div>
+                <div class="col">
+                    Premier menu
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="m-t-50">
+        <section class="auto-margin taille-container">
+            <article class="container ">
+                <div class="row flexible">
+                    <div class="col">
+                        <h1>Titre selfie 1</h1>
+                    </div>
+                    <div class="col">
+                        [..]
+                    </div>
+                </div>
+                <div class="row flexible">
+                    <div class="col">
+                        <img src="images/chine.jpg" alt="Wookie rigolo">
+                    </div>
+                </div>
+            </article>
+            <article class="textcentreetcolorerouge">
+                <header>
+                    <div>
+                        <h1>Le titre du selfie 2</h1>
+                        <h2>2e titre</h2>
+                    </div>
+                    <div>
+                        [..]
+                    </div>
+                </header>
+                <img src="images/chine.jpg" alt="Wookie rigolo">
+            </article>
+        </section>
+    </div>
+    <footer class="footer aumax fixed debug p-10">Footer</footer>
+
+</body>
+
+</html>
